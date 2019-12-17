@@ -1,0 +1,25 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Cerebro Pie-Chart</h1>
+    </div>
+  </div>
+<div>
+    <div style="display:block">
+        <canvas baseChart
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"
+        [plugins]="pieChartPlugins"
+        [colors]="pieChartColors"
+        [legend]="pieChartLegend"></canvas>
+    </div>
+
+    <h1>Toggle/Filter buttons</h1>
+    <div>
+        <button class="btn btn-primary" (click)="pieChartLegend=!pieChartLegend">Toggle Legend</button>
+        <button class="btn btn-danger" (click)="changeLabels()">Change Labels</button>
+        <button class="btn btn-info" (click)="addSlice()">Add Slice</button>
+        <button class="btn btn-warning" (click)="removeSlice()">Remove Slice</button>
+        <button class="btn btn-dark" (click)="changeLegendPosition()">Position</button>
+    </div>

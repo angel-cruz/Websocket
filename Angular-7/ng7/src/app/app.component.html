@@ -1,0 +1,8 @@
+<app-nav></app-nav>
+
+<div *ngIf="chart">
+    <canvas id="canvas">{{ chart }}</canvas>
+</div>
+<section>
+<router-outlet></router-outlet>
+</section>

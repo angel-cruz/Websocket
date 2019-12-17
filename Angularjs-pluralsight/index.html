@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body ng-app>
+    <h1>Binding expressions</h1>
+    {{843 / 42}}
+    <div ng-app>
+    {{843/42}}
+    </div>
+    <script>
+   var work = function(){
+       console.log("working hard!");
+   };
+   var doWork = function(f){
+        //provides abstraction by calling it within another function
+        console.log("starting");
+
+        try {
+            f();
+        }catch(ex) {
+            console.log(ex);
+        }
+        console.log("end")
+   };
+   doWork(work);
+    </script>
+</body>
+</html>
